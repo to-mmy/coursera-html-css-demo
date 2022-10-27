@@ -5,13 +5,13 @@
 
 /* variables that apply to the whole document */
 :root {
-  --highlight-color: rgb(208, 96, 76);
-  --primary-color: rgb(242, 224, 210);
-  --container-color: rgba(112, 128, 144, 0.25);
+  --highlight-color: #d0604c;
+  --primary-color: #ffffff;
+  --container-color: #70809040;
 }
 
 body {
-  background-color: darkslategray;
+  background-color: #002020;
   font-family: Helvetica, sans-serif;
   margin-top: 3rem;
   margin-bottom: 3rem;
@@ -53,11 +53,11 @@ nav ul {
 nav li {
   font-size: 1.3rem;
   display: inline-block;
-  background-color: var(--highlight-color);
+  background-color: var(--container-color);
   padding-top: 0.1rem;
   padding-bottom: 0.1rem;
   border-radius: 0.15rem;
-  box-shadow: 0.1rem 0.2rem var(--primary-color);
+  box-shadow: 0.1rem 0.2rem var(--highlight-color);
   transform: translate(-0.1rem, -0.2rem);
 
 }
@@ -74,7 +74,7 @@ nav a {
 
 nav li:focus-within,
 nav li:hover {
-  box-shadow: 0.2rem 0.3rem var(--primary-color);
+  box-shadow: 0.2rem 0.3rem var(--highlight-color);
   transform: translate(-0.2rem, -0.3rem);
   transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
 }
@@ -100,7 +100,7 @@ article {
 
 article:focus-within,
 article:hover {
-  box-shadow: 0.4rem 0.4rem 1rem -0.25rem rgba(255, 255, 255, 0.5);
+  box-shadow: 0.4rem 0.4rem 1rem -0.25rem #ffffff80;
 }
 
 article a {
@@ -133,7 +133,7 @@ footer {
 footer div {
   flex: 1;
   text-align: left;
-  color: var(--highlight-color);
+  color: white;
   margin-top: auto;
   margin-bottom: auto;
 }
