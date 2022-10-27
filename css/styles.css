@@ -1,0 +1,152 @@
+* {
+  margin: 0rem;
+  padding: 0rem;
+}
+
+/* variables that apply to the whole document */
+:root {
+  --highlight-color: rgb(208, 96, 76);
+  --primary-color: rgb(242, 224, 210);
+  --container-color: rgba(112, 128, 144, 0.25);
+}
+
+body {
+  background-color: darkslategray;
+  font-family: Helvetica, sans-serif;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  margin-left: 5%;
+  margin-right: 5%;
+  color: var(--primary-color);
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  text-decoration: underline;
+  text-decoration-color: var(--highlight-color);
+}
+
+header a {
+  display: block;
+  margin: auto;
+  width: 70%;
+}
+
+header img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: inherit;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+  font-size: 3rem;
+  /* needed to make the inline-block spacing work for the list items */
+}
+
+nav li {
+  font-size: 1.3rem;
+  display: inline-block;
+  background-color: var(--highlight-color);
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  border-radius: 0.15rem;
+  box-shadow: 0.1rem 0.2rem var(--primary-color);
+  transform: translate(-0.1rem, -0.2rem);
+
+}
+
+nav a {
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+  color: var(--primary-color);
+  text-decoration: none;
+  line-height: 1.5rem;
+  padding: 0.4rem;
+}
+
+nav li:focus-within,
+nav li:hover {
+  box-shadow: 0.2rem 0.3rem var(--primary-color);
+  transform: translate(-0.2rem, -0.3rem);
+  transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+}
+
+nav li:active {
+  box-shadow: 0.05rem 0.15rem var(--primary-color);
+  transform: translate(-0.05rem, -0.15rem);
+  transition: transform 0.1s ease-out, box-shadow 0.1s ease-out;
+}
+
+section {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+article {
+  flex: 1;
+  padding: 1rem;
+  background-color: var(--container-color);
+  border-radius: 0.5rem;
+}
+
+article:focus-within,
+article:hover {
+  box-shadow: 0.4rem 0.4rem 1rem -0.25rem rgba(255, 255, 255, 0.5);
+}
+
+article a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+article img {
+  width: 100%;
+  height: 25rem;
+  object-fit: cover;
+}
+
+article p {
+  text-align: justify;
+}
+
+article td {
+  padding-right: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+footer {
+  display: flex;
+  background-color: var(--container-color);
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+}
+
+footer div {
+  flex: 1;
+  text-align: left;
+  color: var(--highlight-color);
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+footer img {
+  width: 15rem;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+footer p {
+  font-weight: 500;
+  text-align: right;
+  margin-right: 1rem;
+}
