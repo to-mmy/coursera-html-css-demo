@@ -101,6 +101,7 @@ article {
 article:focus-within,
 article:hover {
   box-shadow: 0.4rem 0.4rem 1rem -0.25rem #ffffff80;
+  transition: box-shadow 0.1s ease-out;
 }
 
 article a {
